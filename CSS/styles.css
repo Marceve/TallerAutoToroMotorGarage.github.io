@@ -1,0 +1,468 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.7em;
+  outline-color: rgba(49, 138, 172, 0);
+  outline-offset: 80px;
+  text-shadow: 1px 1px 6px red;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.25em;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-size: 1.25em;
+}
+
+header {
+  background-color: rgb(62, 60, 60);
+  top: 0;
+}
+
+header .logo {
+  margin: 0;
+  padding: 15px 20px;
+  font-weight: bold;
+  color: red;
+  font-size: 1.6em;
+  outline-color: rgba(49, 138, 172, 0);
+  outline-offset: 80px;
+  text-shadow: 1px 1px 6px #fff;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+header a {
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+header a:hover {
+  outline-color: rgba(49, 138, 172, 0);
+  outline-offset: 80px;
+  text-shadow: 1px 1px 6px #fff;
+  color: red;
+}
+
+/* quitar linea dell button y colocar letra blanca */
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+/* estilo del button */
+button {
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: #545347;
+  background-image: linear-gradient(to right, #870000 0%, #190A05 51%, #870000 100%);
+
+}
+
+.color-acento {
+  color: red;
+  outline-color: rgba(49, 138, 172, 0);
+  outline-offset: 80px;
+  text-shadow: 1px 1px 6px #fff;
+}
+
+/* cuando el cursor este arriba cambiar de color */
+button:hover {
+  box-shadow: inset 0 0 20px rgba(49, 138, 172, 0.5), 0 0 20px rgba(49, 138, 172, 0.4);
+  outline-color: rgba(49, 138, 172, 0);
+  outline-offset: 80px;
+  text-shadow: 1px 1px 6px #fff;
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.container p {
+  text-align: center;
+  margin: auto;
+  font-size: 25px;
+}
+
+/* contenido */
+#contenido .container {
+  text-align: left;
+  padding: 200px 12px 80px;
+  color: white;
+
+
+}
+
+#contenido {
+  background-image: linear-gradient(to right, #000000 0%, #434343  51%, #000000  100%);
+}
+
+
+
+/* cartas de los servicios */
+
+#servicios {
+  background-image: linear-gradient(to right, #000000 0%, #434343  51%, #000000  100%);
+  color: white;
+  text-align: center;
+}
+
+#servicios .container {
+  padding: 150px 12px;
+}
+
+#servicios .clasificacion {
+  gap: 2px;
+}
+
+#servicios h2 {
+  margin-top: 0;
+  font-size: 3.2em;
+}
+
+#servicios .carta {
+  background-position: center center;
+  background-size: cover;
+  padding: 50px 0px;
+  margin: 30px;
+  border-radius: 15px;
+}
+
+#servicios .carta1 {
+  background-position: center center;
+  background-size: cover;
+  padding: 50px 0px;
+  margin: 30px;
+  border-radius: 15px;
+}
+
+#servicios .carta2 {
+  background-position: center center;
+  background-size: cover;
+  padding: 50px 0px;
+  margin: 30px;
+  border-radius: 15px;
+}
+
+#servicios .carta3 {
+  background-position: center center;
+  background-size: cover;
+  padding: 50px 0px;
+  margin: 30px;
+  border-radius: 15px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------- */
+#servicios .horario {
+  background-position: center center;
+  background-size: cover;
+  padding: 50px 0px;
+  margin: 30px;
+  border-radius: 15px;
+  background-color: #545347;
+  background-image: linear-gradient(to right, #870000 0%, #190A05 51%, #870000 100%);
+  background-size: cover;
+}
+
+#servicios .contactos {
+  background-position: center center;
+  background-size: cover;
+  border-radius: 15px;
+  background-color: #545347;
+  background-image: linear-gradient(to right, #870000 0%, #190A05 51%, #870000 100%);
+  background-size: cover;
+  width: 100%;
+  border: 30px;
+
+}
+
+.icono{
+  margin: 0;
+  padding: 15px 20px;
+  font-weight: bold;
+  font-size: 1.6em;
+}
+
+
+/* ------------------------------------------------------------------------------------------------- */
+
+/* imagenes servicios cartas */
+
+.carta:first-child {
+  background-image: linear-gradient(0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+    url("../CSS/assets/image/frenos.jpeg");
+  background-size: cover;
+}
+
+.carta:nth-child(2) {
+  background-image: linear-gradient(0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+    url("../CSS/assets/image/computarizado.jpeg");
+  background-size: cover;
+}
+
+.carta:nth-child(3) {
+  background-image: linear-gradient(0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+    url("../CSS/assets/image/overhaul.jpeg");
+  background-size: cover;
+}
+
+.carta1:first-child {
+  background-image: linear-gradient(0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+    url("../CSS/assets/image/adquisicion.jpeg");
+  background-size: cover;
+}
+
+.carta1:nth-child(2) {
+  background-image: linear-gradient(0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+    url("../CSS/assets/image/inpeccion.jpeg");
+  background-size: cover;
+}
+
+
+
+.carta2:first-child {
+  background-image: linear-gradient(0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+    url("../CSS/assets/image/aceite.jpeg");
+  background-size: cover;
+}
+
+.carta2:nth-child(2) {
+  background-image: linear-gradient(0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+    url("../CSS/assets/image/suspension.jpeg");
+  background-size: cover;
+}
+
+.carta2:nth-child(3) {
+  background-image: linear-gradient(0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+    url("../CSS/assets/image/electrico.jpeg");
+  background-size: cover;
+}
+
+/* imagenes index cartas */
+.carta3:first-child {
+  background-image: linear-gradient(0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+    url("../CSS/assets/image/mision.jpeg");
+  background-size: cover;
+}
+
+.carta3:nth-child(2) {
+  background-image: linear-gradient(0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+    url("../CSS/assets/image/valores.PNG");
+  background-size: cover;
+}
+
+.carta3:nth-child(3) {
+  background-image: linear-gradient(0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+    url("../CSS/assets/image/taller1.jpg");
+  background-size: cover;
+}
+
+/* ------------------------------------------------------------------------------------------- */
+/* Galeria Fotos */
+.galeria,
+.galeria1 {
+
+  height: calc(300px + 3em);
+  width: 260px;
+  margin: 1em auto;
+  border: 1px solid red;
+  position: relative;
+}
+
+.galeria img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 1s ease;
+}
+
+.galeria input[type=radio],
+.galeria1 input[type=radio] {
+  position: relative;
+  bottom: calc(-300px - 1.5em);
+  left: .5em;
+}
+
+.galeria input[type=radio]:nth-of-type(1):checked~img:nth-of-type(1) {
+  opacity: 1;
+}
+
+.galeria input[type=radio]:nth-of-type(2):checked~img:nth-of-type(2) {
+  opacity: 1;
+}
+
+.galeria input[type=radio]:nth-of-type(3):checked~img:nth-of-type(3) {
+  opacity: 1;
+}
+
+.galeria input[type=radio]:nth-of-type(4):checked~img:nth-of-type(4) {
+  opacity: 1;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
+/* footer container */
+
+footer {
+  background-color: red;
+}
+
+footer p {
+  margin: 0;
+  padding: 12px;
+  color: rgb(100, 100, 100);
+}
+
+footer .container {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.fa-brands {
+  padding: 10px;
+}
+
+.carro {
+  padding: 7px;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Formulario */
+
+.formQuestion {
+  margin-top: 15px;
+}
+
+.formInput {
+  background-image: linear-gradient(to right, #000000 0%, #434343  51%, #000000  100%);
+  width: 100%;
+  font-size: 1rem;
+  padding: 15px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  cursor: pointer;
+  display: block;
+  color: white;
+}
+
+textarea::placeholder {
+  font-family: "Roboto", sans-serif;
+  color: red;
+}
+
+.formParrafo {
+  margin-bottom: 15px;
+  font-size: 19px;
+}
+
+.formInput:focus {
+  color: red;
+}
+
+
+
+/*
+
+
+ll relativo
+
+   ll absoluto
+
+ll
+
+*/
+
+.formLabel {
+  font-size: 18px;
+  left: 10px;
+  transition: 0.5s ease-in-out all;
+  margin-bottom: 40px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------- */
+.wrapper{
+  margin: 150px auto;
+  width: 70%;
+
+}
+
+
+.text-box h2{
+  font-size: 42px;
+}
+.text-box p{
+ font-size: 20px;
+}
+
+
